@@ -1,6 +1,14 @@
 // ---- Define your dialogs  and panels here ----
+//
+let new_perm = define_new_effective_permissions("id_pre", add_info_col = true, which_permissions = null)
+let new_user_selec = define_new_user_select_field("id_pre", "new_text_button", function(selected_user){})
+$('#sidepanel').append(select_user)
 
 
+//let new_user_selec = define_new_user_select_field('usr_', 'User Selection', on_user_change = function(selected_user){$('#perm_').attr('username', selected_user)})
+
+$('#sidepanel').append(select_user)
+$('#perm_').attr('filepath', '/C/presentation_documents/important_file.txt')
 
 // ---- Display file structure ----
 
